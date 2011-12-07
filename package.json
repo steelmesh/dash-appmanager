@@ -1,0 +1,32 @@
+{
+    "name": "dash-appmanager",
+    "description": "Steelmesh Dashboard Application Management Tools",
+    "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+    "tags": ["steelmesh", "dashboard", "couchdb"],
+    "version": "0.0.1",
+    
+    "main": "index.js",
+    "engines": { "node": ">= 0.4.x < 0.7.0" },
+        
+    "dependencies": {
+        "debug": "*",
+        "parted": ">= 0.0.8"
+    },
+    
+    "devDependencies": {
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/steelmesh/dash-appmanager.git"
+    },
+    
+    "bugs": {
+        "url": "http://github.com/steelmesh/dash-appmanager/issues"
+    },
+    
+    "contributors": [
+    ],
+    
+    "private": true
+}

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3>Apps</h3>
+<p>These are the applications currently loaded into Steelmesh.</p>
+<table class="condensed-table bordered-table zebra-striped">
+	<tr>
+		<th>Application ID</th>
+		<th>Mountpoint</th>
+		<th>Required Addins</th>
+		<th>Actions</th>
+	</tr>
+	{% for app in apps %}
+		<tr>
+			<td>{{ app.id }}</td>
+			<td><a href="#">/{{ app.mountpoint }}</a></td>
+			<td>{{ app.addins }}</td>
+			<th><a href="/apps/delete/{{ app.id }}" class="btn danger">Delete</a></td>
+		</tr>
+	{% endfor %}
+</table>
+{% endblock %}
