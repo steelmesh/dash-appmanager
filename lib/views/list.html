@@ -6,6 +6,7 @@
 <table class="condensed-table bordered-table zebra-striped">
 	<tr>
 		<th>Application ID</th>
+		<th>Version</th>
 		<th>Mountpoint</th>
 		<th>Required Addins</th>
 		<th>Actions</th>
@@ -13,6 +14,7 @@
 	{% for app in apps %}
 		<tr>
 			<td>{{ app.id }}</td>
+			<td>{{ app.packageData.version }}</td>
 			<td><a href="#">/{{ app.mountpoint }}</a></td>
 			<td>{{ app.addins }}</td>
 			<th><a href="/apps/delete/{{ app.id }}" class="btn danger">Delete</a></td>
