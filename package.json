@@ -4,15 +4,10 @@
     "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
     "tags": ["steelmesh", "dashboard", "couchdb"],
     "version": "0.1.1",
-    
-    "main": "index.js",
-    "engines": { "node": ">= 0.4.x < 0.7.0" },
-        
+    "private": true,
+
     "dependencies": {
-        "parted": ">= 0.0.9"
-    },
-    
-    "devDependencies": {
+        "parted": "0.1.x"
     },
     
     "repository": {
@@ -25,7 +20,5 @@
     },
     
     "contributors": [
-    ],
-    
-    "private": true
+    ]
 }
